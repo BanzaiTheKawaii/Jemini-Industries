@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Red Sandstone</title>
+
+<link rel="stylesheet" href="Sandstone.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+
+<div class="top-bar">
+    <div class="scroll-text">
+        🚚 Fast Delivery Across India | 🪨 Premium Quality Sandstone | 📞 Call Now: 919214076314
+    </div>
+</div>
+
+<!-- HEADER -->
+
+<header>
+    <div class="logo">JEMINI INDUSTRIES</div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#products">Products</a>
+        <a href="#contact-section">Contact</a>
+    </nav>
+</header>
+
+<!-- HERO (UPGRADED) -->
+
+<section class="hero">
+    <div class="hero-box">
+        <h1>Premium Red Sandstone</h1>
+        <p>Strong. Natural. Timeless.</p>
+
+    <div class="hero-buttons">
+        <a href="#products"><button class="outline">View Products</button></a>
+    </div>
+</div>
+
+</section>
+
+<!-- FEATURES -->
+
+<section class="features fade-up">
+    <h2>Why Choose Us</h2>
+
+<div class="feature-grid">
+    <div class="feature">
+        <h3>🪨 Premium Quality</h3>
+        <p>High-grade sandstone with durability.</p>
+    </div>
+
+    <div class="feature">
+        <h3>🚚 Fast Delivery</h3>
+        <p>Quick transport across India.</p>
+    </div>
+
+    <div class="feature">
+        <h3>💰 Best Pricing</h3>
+        <p>Affordable and transparent rates.</p>
+    </div>
+</div>
+
+</section>
+
+<!-- PRODUCTS -->
+
+<section class="products fade-up" id="products">
+    <h2>Our Products</h2>
+
+<div class="product-grid">
+    <div class="card">
+        <img src="images/slab.jpg">
+        <h3>Sandstone Slabs</h3>
+    </div>
+
+    <div class="card">
+        <img src="images/tiles.jpg">
+        <h3>Sandstone Tiles</h3>
+    </div>
+
+    <div class="card">
+        <img src="images/block.jpg">
+        <h3>Sandstone Blocks</h3>
+    </div>
+</div>
+
+</section>
+
+<!-- GALLERY -->
+
+<section class="gallery fade-up">
+    <h2>Our Work</h2>
+
+<div class="gallery-grid">
+    <img src="images/slab.jpg">
+    <img src="images/tiles.jpg">
+    <img src="images/block.jpg">
+    <img src="images/bg.jpg">
+</div>
+
+</section>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+    <p>📍 H-1-137, Riico Industries Area, BAYANA-321401</p>
+    <p>📞 9214176314</p>
+    <footer id="contact-section"></footer>
+    
+</footer>
+
+<a href="https://wa.me/919214076314" class="whatsapp">Contact</a>
+
+<!-- ANIMATION -->
+
+<script>
+const elements = document.querySelectorAll('.fade-up');
+
+function reveal() {
+  elements.forEach(el => {
+    const top = el.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (top < windowHeight - 100) {
+      el.classList.add('show');
+    }
+  });
+}
+
+window.addEventListener('scroll', reveal);
+reveal();
+</script>
+
+</body>
+</html>
