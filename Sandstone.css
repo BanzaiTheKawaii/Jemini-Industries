@@ -1,557 +1,515 @@
-```css
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* 🌿 COLORS */
 
-:root{
-    --primary:#D47A4A;
-    --secondary:#F3E7DB;
-    --accent:#B85C38;
-    --highlight:#E6A57E;
-    --bg:#FCFAF7;
-    --card:#FFFFFF;
-    --text:#3A2F2A;
+:root {
+    --primary: #D47A4A;
+    --secondary: #F3E7DB;
+    --accent: #B85C38;
+    --highlight: #E6A57E;
+    --bg: #FCFAF7;
+    --card: #FFFFFF;
+    --text: #3A2F2A;
 }
 
 /* 🌞 BODY */
 
-body{
+body {
     background:
-    url('images/texture.jpg'),
-    var(--bg);
-
-    background-size:300px;
-    background-repeat:repeat;
-
-    color:var(--text);
+        url('images/texture.jpg'),
+        var(--bg);
+    background-size: 300px;
+    background-repeat: repeat;
+    color: var(--text);
 }
 
 /* 🌊 TOP BAR */
 
-.top-bar{
-    background:linear-gradient(90deg,#E6A57E,#D47A4A);
-    color:white;
-    overflow:hidden;
-    white-space:nowrap;
-    font-size:14px;
+.top-bar {
+    background: linear-gradient(90deg, #E6A57E, #D47A4A);
+    color: white;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 14px;
 }
 
-.scroll-text{
-    display:inline-block;
-    padding:10px 0;
-    animation:scroll 14s linear infinite;
-    letter-spacing:1px;
+.scroll-text {
+    display: inline-block;
+    padding: 10px 0;
+    animation: scroll 14s linear infinite;
+    letter-spacing: 1px;
 }
 
-@keyframes scroll{
-    from{
-        transform:translateX(100%);
-    }
-
-    to{
-        transform:translateX(-100%);
-    }
+@keyframes scroll {
+    from { transform: translateX(100%); }
+    to   { transform: translateX(-100%); }
 }
 
 /* 🧱 HEADER */
 
-header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-
-    padding:18px 40px;
-
-    background:rgba(255,255,255,0.85);
-
-    backdrop-filter:blur(10px);
-
-    border-bottom:1px solid #eee;
-
-    position:sticky;
-    top:0;
-    z-index:1000;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 /* 🪨 LOGO */
 
-.logo img{
-    height:60px;
-    width:auto;
-    display:block;
+.logo img {
+    height: 60px;
+    width: auto;
+    display: block;
 }
 
 /* 🔗 NAV */
 
-nav{
-    display:flex;
-    align-items:center;
+nav {
+    display: flex;
+    align-items: center;
 }
 
-nav a{
-    margin-left:25px;
-    text-decoration:none;
-    color:var(--text);
-    font-weight:500;
-    transition:0.3s;
+nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 500;
+    transition: 0.3s;
 }
 
-nav a:hover{
-    color:var(--primary);
+nav a:hover {
+    color: var(--primary);
 }
 
 /* 🌄 HERO */
 
-.hero{
-    height:85vh;
-
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-
+.hero {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background:
-    linear-gradient(rgba(212,122,74,0.35),rgba(255,255,255,0.2)),
-    url('images/bg.jpg') center/cover no-repeat;
-
-    color:white;
-    text-align:center;
-
-    padding:20px;
+        linear-gradient(rgba(212, 122, 74, 0.35), rgba(255, 255, 255, 0.2)),
+        url('images/bg.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
 
-.hero h1{
-    font-size:48px;
-    letter-spacing:1px;
+.hero h1 {
+    font-size: 48px;
+    letter-spacing: 1px;
 }
 
-.hero p{
-    margin-top:10px;
-    font-size:18px;
-    opacity:0.95;
+.hero p {
+    margin-top: 10px;
+    font-size: 18px;
+    opacity: 0.95;
 }
 
 /* 🔘 BUTTON */
 
-button{
-    background:linear-gradient(45deg,var(--primary),var(--highlight));
-
-    color:white;
-
-    border:none;
-
-    padding:12px 25px;
-
-    border-radius:8px;
-
-    cursor:pointer;
-
-    transition:0.3s;
+button {
+    background: linear-gradient(45deg, var(--primary), var(--highlight));
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-button:hover{
-    background:var(--accent);
-    transform:scale(1.05);
+button:hover {
+    background: var(--accent);
+    transform: scale(1.05);
 }
 
 /* 📦 SECTIONS */
 
-section{
-    padding:60px 20px;
-    max-width:1100px;
-    margin:auto;
-    text-align:center;
+section {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
 }
 
 /* 🧱 PRODUCTS */
 
-.product-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
 }
 
-.card{
-    background:var(--card);
-
-    border-radius:12px;
-
-    overflow:hidden;
-
-    border:1px solid #eee;
-
-    transition:0.3s;
+.card {
+    background: var(--card);
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #eee;
+    transition: 0.3s;
 }
 
-.card img{
-    width:100%;
-    height:220px;
+/* ✅ CONSISTENT PRODUCT CARD IMAGE SIZE */
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;       /* fills the box, crops neatly — no distortion */
+    object-position: center;
+    display: block;
 }
 
-.card h3{
-    margin:12px 0;
+.card h3 {
+    margin: 12px 0;
 }
 
-.card:hover{
-    transform:translateY(-6px);
-    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
 /* 🎞️ SLIDER */
 
-.slider{
-    position:relative;
-
-    width:100%;
-    max-width:1000px;
-
-    margin:40px auto;
-
-    overflow:hidden;
-
-    border-radius:20px;
-
-    background:linear-gradient(to bottom,#f8f4ee,#efe5d8);
-
-    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 40px auto;
+    overflow: hidden;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, #f8f4ee, #efe5d8);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
-/* EACH SLIDE */
+/* EACH SLIDE — consistent height everywhere */
 
-.slides{
-    display:none;
-
-    position:relative;
-
-    width:100%;
-
-    height:500px;
-
-    overflow:hidden;
+.slides {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 420px;           /* single source of truth — desktop */
+    overflow: hidden;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, #f8f4ee, #efe5d8);
 }
 
-/* PERFECT IMAGE FIT */
+/* ✅ IMAGES FILL THE SLIDE WITHOUT DISTORTION */
 
 .slides img,
-.slides video{
-    width:100%;
-    height:100%;
-
-    object-fit:cover;
-
-    display:block;
+.slides video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;       /* covers the frame, crops neatly */
+    object-position: center;
+    display: block;
 }
 
 /* 🏷️ CAPTION */
 
-.slide-caption{
-    position:absolute;
-
-    bottom:20px;
-    left:20px;
-
-    background:rgba(0,0,0,0.55);
-
-    color:white;
-
-    padding:12px 20px;
-
-    border-radius:12px;
-
-    font-size:20px;
-
-    backdrop-filter:blur(6px);
+.slide-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.55);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-size: 20px;
+    backdrop-filter: blur(6px);
 }
 
 /* 🖼️ GALLERY */
 
-.gallery-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-    gap:12px;
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
 }
 
-.gallery-grid img{
-    width:100%;
-    height:220px;
-    object-fit:cover;
-    border-radius:10px;
-    transition:0.3s;
+.gallery-grid img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.3s;
 }
 
-.gallery-grid img:hover{
-    transform:scale(1.04);
+.gallery-grid img:hover {
+    transform: scale(1.04);
 }
 
 /* 🗺️ MAP */
 
-.map iframe{
-    width:100%;
-    border-radius:12px;
+.map iframe {
+    width: 100%;
+    border-radius: 12px;
 }
 
 /* 🧱 FOOTER */
 
-footer{
-    background:var(--primary);
-    color:white;
-    text-align:center;
-    padding:20px;
-}
-.slides {
-
-    display: none;
-
-    position: relative;
-
-    height: 500px;
-
-    background: #f6f1ea;
-
-    border-radius: 20px;
-
-    overflow: hidden;
-
-}
-
-/* ✅ PERFECT AUTO RESIZE */
-
-.slides img,
-.slides video {
-
-    width: 100%;
-
-    height: 100%;
-
-    object-fit: contain;
-
-    display: block;
-
-}
-.slides {
-
-    background: linear-gradient(to bottom, #f8f4ee, #efe5d8);
-
+footer {
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
 
 /* 💬 WHATSAPP */
 
-.whatsapp{
-    position:fixed;
-
-    right:20px;
-    bottom:20px;
-
-    width:65px;
-    height:65px;
-
-    z-index:9999;
-
-    transition:0.3s ease;
+.whatsapp {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 65px;
+    height: 65px;
+    z-index: 9999;
+    transition: 0.3s ease;
 }
 
-.whatsapp img{
-    width:100%;
-    height:100%;
-
-    border-radius:50%;
-
-    box-shadow:0 6px 18px rgba(0,0,0,0.25);
+.whatsapp img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
 }
 
-.whatsapp:hover{
-    transform:scale(1.12);
+.whatsapp:hover {
+    transform: scale(1.12);
 }
 
-/* ✨ ANIMATION */
+/* ✨ SCROLL ANIMATION */
 
-.fade-up{
-    opacity:0;
-    transform:translateY(40px);
-    transition:all 0.8s ease;
+.fade-up {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
 }
 
-.fade-up.show{
-    opacity:1;
-    transform:translateY(0);
+.fade-up.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* ✨ SLIDER FADE */
 
-.fade{
-    animation:fadeEffect 1s;
+.fade {
+    animation: fadeEffect 1s;
 }
 
-@keyframes fadeEffect{
-    from{
-        opacity:0.4;
-    }
-
-    to{
-        opacity:1;
-    }
+@keyframes fadeEffect {
+    from { opacity: 0.4; }
+    to   { opacity: 1; }
 }
 
-html{
-    scroll-behavior:smooth;
+html {
+    scroll-behavior: smooth;
 }
 
-/* 📱 MOBILE MENU */
+/* 📱 HAMBURGER TOGGLE — hidden on desktop */
 
-.menu-toggle{
-    display:none;
-
-    font-size:34px;
-
-    cursor:pointer;
-
-    color:var(--primary);
-
-    transition:0.3s;
-
-    user-select:none;
+.menu-toggle {
+    display: none;
+    font-size: 34px;
+    cursor: pointer;
+    color: var(--primary);
+    transition: 0.3s;
+    user-select: none;
 }
 
-.menu-toggle:hover{
-    transform:scale(1.1);
-    color:var(--accent);
-}
-
-/* 📱 MOBILE */
-
-    header{
-        padding:16px 20px;
-    }
-
-    .menu-toggle{
-        display:block;
-    }
-
-    nav{
-        position:absolute;
-
-        top:80px;
-        right:20px;
-
-        background:rgba(255,255,255,0.95);
-
-        backdrop-filter:blur(14px);
-
-        border-radius:18px;
-
-        padding:12px;
-
-        width:220px;
-
-        display:none;
-
-        flex-direction:column;
-
-        box-shadow:0 12px 30px rgba(0,0,0,0.15);
-
-        border:1px solid rgba(255,255,255,0.4);
-
-        animation:menuFade 0.3s ease;
-    }
-
-    nav.active{
-        display:flex;
-    }
-
-    nav a{
-        margin:0;
-
-        padding:14px 16px;
-
-        border-radius:12px;
-
-        font-size:15px;
-    }
-
-    nav a:hover{
-        background:var(--secondary);
-
-        color:var(--accent);
-
-        transform:translateX(4px);
-    }
-
-    .hero{
-        height:70vh;
-    }
-
-    .hero h1{
-        font-size:32px;
-    }
-
-    .hero p{
-        font-size:16px;
-    }
-
-    .slides{
-        height:280px;
-    }
-
-    .slide-caption{
-        font-size:15px;
-        padding:8px 14px;
-    }
-
-    .gallery-grid{
-        grid-template-columns:1fr;
-    }
-
-    .product-grid{
-        grid-template-columns:1fr;
-    }
-
-    .whatsapp{
-        width:58px;
-        height:58px;
-        right:15px;
-        bottom:15px;
-    }
+.menu-toggle:hover {
+    transform: scale(1.1);
+    color: var(--accent);
 }
 
 /* ✨ MENU ANIMATION */
 
-@keyframes menuFade{
-
-    from{
-        opacity:0;
-        transform:translateY(-10px);
+@keyframes menuFade {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
     }
-
-    to{
-        opacity:1;
-        transform:translateY(0);
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
-```css id="mblfix92"
-/* 📱 FINAL MOBILE FIX */
 
-@media (max-width:768px){
+/* ============================================
+   📱 MOBILE — max-width: 768px
+   ============================================ */
 
-    .slides{
-        height:240px !important;
+@media (max-width: 768px) {
+
+    /* HEADER */
+
+    header {
+        padding: 14px 18px;
     }
 
-    .factory-video video{
-        height:240px !important;
+    /* HAMBURGER VISIBLE */
+
+    .menu-toggle {
+        display: block;
     }
 
-    .whatsapp{
-        display:block !important;
-        width:58px !important;
-        height:58px !important;
-        right:15px !important;
-        bottom:15px !important;
-        z-index:99999 !important;
+    /* DROPDOWN NAV */
+
+    nav {
+        position: absolute;
+        top: 76px;
+        right: 18px;
+        background: rgba(255, 255, 255, 0.97);
+        backdrop-filter: blur(14px);
+        border-radius: 18px;
+        padding: 10px;
+        width: 220px;
+        display: none;
+        flex-direction: column;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        animation: menuFade 0.3s ease;
     }
 
+    nav.active {
+        display: flex;
+    }
+
+    nav a {
+        margin: 0;
+        padding: 13px 16px;
+        border-radius: 12px;
+        font-size: 15px;
+    }
+
+    nav a:hover {
+        background: var(--secondary);
+        color: var(--accent);
+        transform: translateX(4px);
+    }
+
+    /* HERO */
+
+    .hero {
+        height: 65vh;
+        padding: 20px 16px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+        line-height: 1.3;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    /* SECTIONS */
+
+    section {
+        padding: 40px 16px;
+    }
+
+    /* 🎞️ SLIDES — comfortable mobile height */
+
+    .slides {
+        height: 240px !important;
+    }
+
+    .slides img,
+    .slides video {
+        object-fit: cover;      /* still fills frame cleanly on mobile */
+        object-position: center;
+    }
+
+    .slide-caption {
+        font-size: 13px;
+        padding: 8px 12px;
+        bottom: 12px;
+        left: 12px;
+    }
+
+    /* 🏭 FACTORY VIDEO */
+
+    .factory-video video {
+        height: 240px !important;
+        object-fit: cover;
+    }
+
+    /* 🧱 PRODUCTS — 2-column on mid-size phones, 1-column on tiny screens */
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+    }
+
+    .card img {
+        height: 160px;         /* balanced size — not too small, not too big */
+    }
+
+    /* 🖼️ GALLERY */
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .gallery-grid img {
+        height: 160px;
+    }
+
+    /* 💬 WHATSAPP */
+
+    .whatsapp {
+        width: 56px !important;
+        height: 56px !important;
+        right: 14px !important;
+        bottom: 14px !important;
+        z-index: 99999 !important;
+        display: block !important;
+    }
+}
+
+/* ============================================
+   📱 TINY PHONES — max-width: 420px
+   ============================================ */
+
+@media (max-width: 420px) {
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    /* Stack to single column on very small screens */
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card img {
+        height: 200px;         /* more room when single column */
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-grid img {
+        height: 200px;
+    }
+
+    .slides {
+        height: 210px !important;
+    }
 }
