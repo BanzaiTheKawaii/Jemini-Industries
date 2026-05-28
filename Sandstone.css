@@ -283,8 +283,6 @@ html {
 
 }
 
-/* ✅ FIXED IMAGE SIZE */
-
 .slides img,
 .slides video {
 
@@ -292,42 +290,13 @@ html {
 
     height: 500px;
 
-    object-fit: contain;
-
-    background: linear-gradient(to bottom, #f7f2eb, #efe6dc);
-
-    padding: 20px;
-
-    border-radius: 20px;
+    object-fit: cover;
 
     display: block;
 
-}
-
-/* 🏷️ CAPTION */
-
-.slide-caption {
-
-    position: absolute;
-
-    bottom: 20px;
-
-    left: 20px;
-
-    background: rgba(0,0,0,0.55);
-
-    color: white;
-
-    padding: 12px 20px;
-
-    border-radius: 12px;
-
-    font-size: 20px;
-
-    backdrop-filter: blur(6px);
+    border-radius: 20px;
 
 }
-
 /* ✨ FADE EFFECT */
 
 .fade {
