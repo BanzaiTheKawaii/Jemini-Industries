@@ -535,4 +535,107 @@ html{
         transform:translateY(0);
     }
 }
+```css id="mblfix92"
+/* 📱 MOBILE FIXES */
+
+@media (max-width:768px){
+
+    /* 🎞️ PRODUCT SLIDER MOBILE FIX */
+
+    .slider{
+        width:100%;
+        border-radius:14px;
+    }
+
+    .slides{
+        height:240px;
+        border-radius:14px;
+        overflow:hidden;
+    }
+
+    .slides img,
+    .slides video{
+
+        width:100%;
+        height:100%;
+
+        object-fit:cover;
+
+        object-position:center;
+
+        display:block;
+    }
+
+    /* 🏷️ SLIDE CAPTION */
+
+    .slide-caption{
+
+        font-size:14px;
+
+        padding:8px 12px;
+
+        bottom:12px;
+
+        left:12px;
+
+        border-radius:10px;
+    }
+
+    /* 🏭 MANUFACTURING VIDEO FIX */
+
+    .factory-video{
+
+        width:100%;
+
+        overflow:hidden;
+
+        border-radius:16px;
+    }
+
+    .factory-video video{
+
+        width:100%;
+
+        height:240px;
+
+        object-fit:cover;
+
+        display:block;
+    }
+
+    /* 💬 WHATSAPP BUTTON FIX */
+
+    .whatsapp{
+
+        display:flex;
+
+        align-items:center;
+
+        justify-content:center;
+
+        position:fixed;
+
+        right:16px;
+
+        bottom:16px;
+
+        width:58px;
+
+        height:58px;
+
+        z-index:99999;
+    }
+
+    .whatsapp img{
+
+        width:100%;
+
+        height:100%;
+
+        border-radius:50%;
+
+        display:block;
+    }
+
+}
 ```
