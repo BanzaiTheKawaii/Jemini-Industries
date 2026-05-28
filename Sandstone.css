@@ -304,6 +304,41 @@ footer{
     text-align:center;
     padding:20px;
 }
+.slides {
+
+    display: none;
+
+    position: relative;
+
+    height: 500px;
+
+    background: #f6f1ea;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+}
+
+/* ✅ PERFECT AUTO RESIZE */
+
+.slides img,
+.slides video {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: contain;
+
+    display: block;
+
+}
+.slides {
+
+    background: linear-gradient(to bottom, #f8f4ee, #efe5d8);
+
+}
 
 /* 💬 WHATSAPP */
 
