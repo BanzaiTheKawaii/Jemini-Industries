@@ -505,3 +505,242 @@ height: 280px;
 .whatsapp:hover{
     transform: scale(1.1);
 }
+/* =========================================
+   📱 COMPLETE PREMIUM MOBILE UPGRADE
+========================================= */
+
+@media (max-width: 768px) {
+
+/* 🌐 BODY */
+body{
+overflow-x: hidden;
+}
+
+/* 🧱 HEADER */
+header{
+flex-direction: column;
+align-items: center;
+padding: 15px 20px;
+gap: 12px;
+}
+
+.logo{
+font-size: 24px;
+text-align: center;
+}
+
+/* 🧭 NAVIGATION */
+nav{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 12px;
+}
+
+nav a{
+margin: 0;
+font-size: 15px;
+padding: 6px 10px;
+}
+
+/* 🌄 HERO */
+.hero{
+height: 75vh;
+padding: 20px;
+background-position: center;
+}
+
+.hero-box{
+width: 100%;
+padding: 20px;
+backdrop-filter: blur(4px);
+}
+
+.hero h1{
+font-size: 34px;
+line-height: 1.2;
+}
+
+.hero p{
+font-size: 16px;
+margin-top: 10px;
+}
+
+/* 🔘 HERO BUTTONS */
+.hero-buttons{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 12px;
+margin-top: 20px;
+}
+
+.hero button{
+width: 90%;
+max-width: 320px;
+font-size: 15px;
+padding: 14px;
+border-radius: 10px;
+}
+
+/* 📦 SECTIONS */
+section{
+padding: 50px 16px;
+}
+
+/* 🏷️ HEADINGS */
+.products h2,
+.gallery h2,
+.features h2,
+.manufacturing h2,
+.contact h2{
+font-size: 30px;
+margin-bottom: 28px;
+line-height: 1.2;
+}
+
+/* 🧱 PRODUCT GRID */
+.product-grid{
+grid-template-columns: 1fr;
+gap: 22px;
+}
+
+.card{
+width: 100%;
+border-radius: 16px;
+overflow: hidden;
+}
+
+.card img{
+height: 220px;
+}
+
+/* ✨ CARD HOVER */
+.card:hover{
+transform: translateY(-4px);
+}
+
+/* 🌟 FEATURES */
+.feature-grid{
+display: grid;
+grid-template-columns: 1fr;
+gap: 18px;
+}
+
+.feature{
+padding: 20px;
+border-radius: 14px;
+}
+
+/* 🖼️ GALLERY */
+.gallery-grid{
+grid-template-columns: 1fr 1fr;
+gap: 10px;
+}
+
+.gallery-grid img{
+height: 150px;
+border-radius: 10px;
+}
+
+/* 🎞️ SLIDER */
+.slider{
+border-radius: 16px;
+}
+
+.slides img,
+.slides video{
+height: 260px;
+}
+
+/* 🏷️ SLIDER CAPTION */
+.slide-caption{
+font-size: 15px;
+padding: 10px 15px;
+bottom: 12px;
+left: 12px;
+}
+
+/* 🏭 FACTORY VIDEO */
+.factory-video{
+border-radius: 16px;
+}
+
+.factory-video video{
+height: 260px;
+}
+
+/* 📞 CONTACT */
+.contact{
+padding: 35px 18px;
+border-radius: 18px;
+}
+
+form{
+width: 100%;
+gap: 12px;
+}
+
+input,
+textarea{
+width: 100%;
+padding: 14px;
+font-size: 15px;
+border-radius: 10px;
+}
+
+textarea{
+min-height: 120px;
+resize: vertical;
+}
+
+button{
+width: 100%;
+padding: 14px;
+font-size: 15px;
+}
+
+/* 🗺️ MAP */
+.map iframe{
+height: 260px;
+border-radius: 16px;
+}
+
+/* 🧱 FOOTER */
+footer{
+padding: 22px 14px;
+font-size: 14px;
+line-height: 1.6;
+}
+
+/* 💬 WHATSAPP */
+.whatsapp{
+width: 58px;
+height: 58px;
+right: 15px;
+bottom: 15px;
+}
+
+/* ✨ SCROLL TEXT */
+.scroll-text{
+font-size: 13px;
+padding: 9px 0;
+}
+
+/* 🌊 TOP BAR */
+.top-bar{
+font-size: 13px;
+}
+
+/* 🚫 PREVENT SIDE SCROLL */
+img,
+video{
+max-width: 100%;
+}
+
+/* 🪨 GENERAL SPACING */
+h1,h2,h3,p{
+word-wrap: break-word;
+}
+
+}
