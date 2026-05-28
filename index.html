@@ -23,18 +23,33 @@
 <!-- HEADER -->
 
 <header>
-    <div class="logo">JEMINI INDUSTRIES</div>
-<nav>
-    <a href="#">Home</a>
 
-    <a href="#products">Products</a>
+    <div class="logo">
+        JEMINI INDUSTRIES
+    </div>
 
-    <a href="#manufacturing">Manufacturing</a>
+    <!-- MOBILE MENU BUTTON -->
 
-    <a href="#our-work">Our Work</a>
+    <div class="menu-toggle" id="menu-toggle">
+        ☰
+    </div>
 
-    <a href="#contact-section">Contact</a>
-</nav>
+    <!-- NAVIGATION -->
+
+    <nav id="nav-menu">
+
+        <a href="#">Home</a>
+
+        <a href="#products">Products</a>
+
+        <a href="#manufacturing">Manufacturing</a>
+
+        <a href="#our-work">Our Work</a>
+
+        <a href="#contact-section">Contact</a>
+
+    </nav>
+
 </header>
 
 <!-- HERO (UPGRADED) -->
@@ -251,6 +266,18 @@ function showSlides() {
 showSlides();
 
 </script>
+<script>
 
+const menuToggle = document.getElementById("menu-toggle");
+
+const navMenu = document.getElementById("nav-menu");
+
+menuToggle.addEventListener("click", () => {
+
+    navMenu.classList.toggle("active");
+
+});
+
+</script>
 </body>
 </html>
