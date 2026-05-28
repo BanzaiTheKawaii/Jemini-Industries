@@ -238,18 +238,6 @@ text-align: center;
 padding: 20px;
 }
 
-/* 💬 WHATSAPP */
-.whatsapp {
-position: fixed;
-bottom: 20px;
-right: 20px;
-background: #25D366;
-color: white;
-padding: 12px 18px;
-border-radius: 50px;
-text-decoration: none;
-}
-
 /* 📱 MOBILE */
 @media (max-width: 768px) {
 header {
