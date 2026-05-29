@@ -256,10 +256,11 @@ section h2 {
     width: 100%;
     max-width: 1000px;
     margin: 40px auto;
-    overflow: hidden;
     border-radius: 20px;
-    background: linear-gradient(to bottom, #f8f4ee, #efe5d8);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    overflow: hidden;                       /* clips images to rounded corners */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    background: #1a1210;                    /* dark fallback while slide loads */
+    aspect-ratio: 16 / 9;                  /* consistent proportions on all screens */
 }
 
 /* ============================================================
@@ -267,23 +268,19 @@ section h2 {
    ============================================================ */
 .slides {
     display: none;
-    position: relative;
+    position: absolute;                    /* stack all slides inside the wrapper */
+    inset: 0;                              /* top/right/bottom/left: 0 */
     width: 100%;
-    height: 480px;
+    height: 100%;
     overflow: hidden;
-    background: linear-gradient(to bottom, #f8f4ee, #efe5d8);
-}
-
-.slides.active,
-.slides:first-child {
-    /* JS toggles display; keep overrides here */
 }
 
 .slides img,
 .slides video {
     width: 100%;
     height: 100%;
-    object-fit: contain;      /* full image visible, no crop */
+    object-fit: cover;                     /* fills the box, no letterboxing */
+    object-position: center center;        /* focus on centre of every image */
     display: block;
 }
 
@@ -537,8 +534,9 @@ html {
     }
 
     /* --- SLIDER --- */
-    .slides {
-        height: 240px;
+    /* aspect-ratio: 16/9 on .slider handles sizing — no fixed height needed */
+    .slider {
+        border-radius: 14px;
     }
 
     .slide-caption {
@@ -608,10 +606,6 @@ html {
 
     .hero p {
         font-size: 14px;
-    }
-
-    .slides {
-        height: 200px;
     }
 
     .gallery-grid {
